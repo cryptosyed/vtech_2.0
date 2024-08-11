@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;  
+}
+.branches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.branch {
+    background-color: #F2F1EB;;
+    margin-bottom: 20px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex: 0 0 48%;
+    box-sizing: border-box;
+}
+
+.branch:hover {
+    transform: scale(1.02);
+}
+
+
+.branch h2 {
+    margin-top: 0;
+    color: #4a21b2;
+}
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+.contact-info li {
+    margin-bottom: 10px;
+}
+.contact-info li i {
+    margin-right: 10px;
+}
+.location {
+    margin-top: 10px;
+}
