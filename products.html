@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-Tech Engineers</title>
+    <link rel="icon" type="image/x-icon" href="./images/Vtechnewlogo.png">
+    <link rel="stylesheet" href="./products.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
+        <div class="d-flex align-items-center">
+            <span><img class="logo" src="./images/Vtechnewlogo.png" alt="logo"
+                    style=" top: -30px; width: 90px; height: 110px;"></span>
+            <a class="navbar-brand" href="#"
+                style="font-size: 25px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bolder;">V-Tech
+                Engineers</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div style="margin-left: 350px;" class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav d-flex justify-content-around">
+                <li class="nav-item active mr-4">
+                    <a class="nav-link" href="./index.html" data-toggle="tooltip" data-placement="bottom" title="Home">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item mr-4">
+                    <a class="nav-link" href="./products.html" data-toggle="tooltip" data-placement="bottom" title="Products">
+                        <i class="fas fa-boxes"></i> Products
+                    </a>
+                </li>
+                <li class="nav-item mr-4">
+                    <a class="nav-link" href="./branches.html" data-toggle="tooltip" data-placement="bottom"
+                        title="Branches">
+                        <i class="fas fa-map-marker-alt"></i> Branches
+                    </a>
+                </li>
+                <li class="nav-item mr-4">
+                    <a class="nav-link" href="./about.html" data-toggle="tooltip" data-placement="bottom" title="About">
+                        <i class="fas fa-info-circle"></i> About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html" data-toggle="tooltip" data-placement="bottom"
+                        title="Contact">
+                        <i class="fas fa-envelope"></i> Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</head>
+
+<body>
+    <!-- Modal Structure -->
+    <div class="modal fade" id="ordermodal" tabindex="-1" role="dialog" aria-labelledby="ordermodalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderModalLabel">Order Form:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="number">Phone Number:</label>
+                            <input type="number" class="form-control" id="number" placeholder="Enter our number">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address:</label>
+                            <textarea class="form-control" id="details" rows="3"
+                                placeholder="Enter your Address"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="details">Additional request:</label>
+                            <textarea class="form-control" id="details" rows="3"
+                                placeholder="Describe your request"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+             
+        </div>
+    </div>
+    <div class="container">
+        <h1 style="color:blue;">Our Products</h1>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="./images/products/V2_1.jpg" alt="Product 1">
+                <h2>Areca Dehusking Capacity - V2</h2>
+                <p>Rs:19,000</p>
+                <button type="button" data-toggle="modal" data-target="#ordermodal">
+                    Order Now
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="./images/products/pic1.jpg" alt="boiler tank">
+                <h2>Boiler Tank</h2>
+                <p>Rs:10,000</p>
+                <button type="button" data-toggle="modal" data-target="#ordermodal">
+                    Order Now
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="./images/products/pic3.jpg" alt="Product 3">
+                <h2>Areca De-Husking Machine</h2>
+                <p>Rs:45,000</p>
+                <button type="button" data-toggle="modal" data-target="#ordermodal">
+                    Order Now
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="./images/products/pic4.jpg" alt="Hasi Hannugotu Suliyuva Machine">
+                <h2>Hasi Hannugotu Suliyuva Machine</h2>
+                <p>Rs:70,000</p>
+                <button type="button" data-toggle="modal" data-target="#ordermodal">
+                    Order Now
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="./images/products/pic5.jpg" alt="Areca De-husking Capacity - V24
+                ">
+                <h2>Areca De-husking Capacity - V2</h2>
+                <p>Rs:60,000</p>
+                <button type="button" data-toggle="modal" data-target="#ordermodal">
+                    Order Now
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="./images/products/pic6.jpg" alt="Kallina Gorabalu Polisher Machine">
+                <h2>Kallina Gorabalu Polisher Machine</h2>
+                <p>Rs:30,000</p>
+                <button type="button" data-toggle="modal" data-target="#ordermodal">
+                    Order Now
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="./images/products/pic7.jpg" alt="Arecanut Bunch Remover">
+                <h2>Arecanut Bunch Remover</h2>
+                <p>Rs:40,000</p>
+                <button type="button" data-toggle="modal" data-target="#ordermodal">
+                    Order Now
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="./images/products/V24_New.png" alt="Product 3">
+                <h2>Areca Dehusking Machine V5</h2>
+                <p>Rs:55,000</p>
+                <button type="button" data-toggle="modal" data-target="#ordermodal">
+                    Order Now
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="./images/products/Hannu_Gotu_New.png" alt="Product 3">
+                <h2>Hannu Gotu Machine</h2>
+                <p>Rs:15,000</p>
+                <button type="button" data-toggle="modal" data-target="#ordermodal">
+                    Order Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- <footer class="footer">
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="./images/footerlogo.png" alt="V-Tech Engineers Logo" class="logo">
+                        <p class="company-name">V-Tech Engineers</p>
+                        <p><i class="fas fa-map-marker"></i> V-Tech Engineers Kuntavalli, Melige Post,</p>
+                        <p> Thirthahalli(Tq), Shivamogga - 577415</p>
+                        <p><i class="fas fa-phone"></i> 08181 - 272075</p>
+                        <p><i class="fas fa-phone"></i> 08181 - 272175</p>
+                        <hr style="border-top: 1px dotted #ccc;">
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="footer-heading">Customer Care</h5>
+                        <p><i class="fas fa-phone"></i> 08181 - 295295</p>
+                        <p><i class="fas fa-mobile-alt"></i> 94481 05006</p>
+                        <p><i class="fas fa-mobile-alt"></i> 94482 87796</p>
+                        <p><i class="fas fa-mobile-alt"></i> 89713 12191</p>
+                        <p><i class="fas fa-envelope"></i> office@vtechengineer.com</p>
+                        <hr style="border-top: 1px dotted #ccc;">
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="footer-heading">Service Centers</h5>
+                        <p>Thirthahalli</p>
+                        <p>Shivamogga</p>
+                        <p>Holalkere</p>
+                        <p>Chennagiri</p>
+                        <p>Shikaripura</p>
+                        <p>Davanagere</p>
+                        <p>K.B. Cross</p>
+                        <hr style="border-top: 1px dotted #ccc;">
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="footer-heading">Other Branches</h5>
+                        <p>Thirthahalli</p>
+                        <p>Shivamogga</p>
+                        <p>Chennagiri</p>
+                        <p>K.B. Cross</p>
+                        <hr style="border-top: 1px dotted #ccc;">
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="footer-heading">Social Media</h5>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/vtech.kuntavalli.94" target="_blank">
+                                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                    VTech Kuntavalli
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://x.com/EngineersVtech?s=09" target="_blank">
+                                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                                    @EngineersVtech
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/vtechengineers/?igshid=1mxry6f9xk9eo"
+                                    target="_blank">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                    VtechEngineers
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/channel/UCa3HU3eI46FSh1JM4jepTBg" target="_blank">
+                                    <i class="fab fa-youtube" aria-hidden="true"></i>
+                                    VTech Engineers
+                                </a>
+                            </li>
+                        </ul>
+                        <hr style="border-top: 1px dotted #ccc;">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="text-center">&copy; 2023 V-Tech Engineers. All rights reserved. Designed by: SHA INNOVATIONS
+                </p>
+            </div>
+        </div>
+    </footer> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

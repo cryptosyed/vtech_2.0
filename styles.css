@@ -27,8 +27,13 @@ img {
 
 .navbar {
   transition: all 0.3s ease-in-out;
-  background-color: #333; /* add a dark background color to the navbar */
+  background-color: #333;
+  /* add a dark background color to the navbar */
   padding: 10px;
+}
+
+.nav-item {
+  margin-right: 30px;
 }
 
 .navbar-collapse {
@@ -45,12 +50,14 @@ img {
 }
 
 .nav-link {
-  color: #fff; /* change the text color of the navbar links */
+  color: #fff;
+  /* change the text color of the navbar links */
   transition: all 0.3s ease-in-out;
 }
 
 .navbar-brand {
-  color: #ccc; /* change the text color of the navbar brand */
+  color: #ccc;
+  /* change the text color of the navbar brand */
 }
 
 .nav-link:hover {
@@ -59,18 +66,29 @@ img {
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* change the icon color of the navbar toggler */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  /* change the icon color of the navbar toggler */
 }
+
 /* ---------------------------------------------------------------------------------- */
 
 /* Image Carousel */
+.c-item {
+  height: 650px;
+}
 
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
 /* ---------------------------------------------------------------------------------- */
 
 /* Services */
 
 .services-container {
-  background-color: #f7f7f7; /* Change this to your desired background color */
+  background-color: #f7f7f7;
+  /* Change this to your desired background color */
   padding: 20px;
 }
 
@@ -85,42 +103,144 @@ img {
 .service_content {
   margin-bottom: 20px;
   padding: 0 15px;
+  font-size: 20px;
+  font-weight: 400 ;
 }
 
+
 .ser {
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
   margin-right: 10px;
 }
 
 /* ---------------------------------------------------------------------------------- */
 
+/* Container with modal */
+.custom-container {
+  /* height: 600px; */
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; 
+}
 
+.image-division {
+  flex-grow: 1;
+
+  height: 200px; 
+  overflow: hidden; 
+}
+
+.image-division img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: 50% 50%;
+  overflow: hidden;
+  border-radius: 15px 0 0 15px;
+}
+.text-division {
+  flex-grow: 1;
+  flex: 1;
+  height: 200px;
+  background-color: #00a4e4;
+  color: white;
+  border-radius: 0 15px 15px 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.text-division button {
+  margin-top: 20px;
+  background-color: rgb(255, 145, 0);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.text-division button:hover {
+  background-color: rgb(255, 188, 53);
+}
+
+/* ---------------------------------------------------------------------------------- */
 
 /* Testimonials */
 
-.home-testimonial{
-  background-color: #231834;height: 500px
+.home-testimonial {
+  background-color: #231834;
+  height: 500px
 }
-.home-testimonial-bottom{
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;margin-top: 20px;margin-bottom: 0px;position: relative;height: 130px;top: 190px
+
+.home-testimonial-bottom {
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  position: relative;
+  height: 130px;
+  top: 190px
 }
-.home-testimonial h1{
-  color: var(--orange);font-size: 14px;font-weight: 500;text-transform: uppercase}.home-testimonial h3{color: white;font-size: 28px;font-weight: 700
-  }
-.testimonial-inner{
-  position: relative;top: -174px
+
+.home-testimonial h1 {
+  color: rgba(66, 167, 234, 0.977);
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase
 }
-.testimonial-pos{
-  position: relative;top: 24px
+
+.home-testimonial h3 {
+  color: white;
+  font-size: 25px;
+  font-weight: 500
 }
-.testimonial-inner .tour-desc{
-  border-radius: 5px;padding: 40px
+
+.testimonial-inner {
+  position: relative;
+  top: -174px
 }
-.color-grey-3{font-family: "Montserrat", Sans-serif;font-size: 14px;color: #6c83a2}
-.testimonial-inner img.tm-people{width: 60px;height: 60px;-webkit-border-radius: 50%;border-radius: 50%;-o-object-fit: cover;object-fit: cover;max-width: none}
-.link-name{font-family: "Montserrat", Sans-serif;font-size: 14px;color: #6c83a2}
-.link-position{font-family: "Montserrat", Sans-serif;font-size: 12px;color: #6c83a2}
+
+.testimonial-pos {
+  position: relative;
+  top: 24px
+}
+
+.testimonial-inner .tour-desc {
+  border-radius: 5px;
+  padding: 40px
+}
+
+.color-grey-3 {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
+  color: #6c83a2
+}
+
+.testimonial-inner img.tm-people {
+  width: 60px;
+  height: 60px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-width: none
+}
+
+.link-name {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
+  color: #6c83a2
+}
+
+.link-position {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 12px;
+  color: #6c83a2
+}
 
 /* ---------------------------------------------------------------------------------- */
 
@@ -181,4 +301,3 @@ img {
   border-top: 1px dotted #ccc;
   margin: 20px 0;
 }
-

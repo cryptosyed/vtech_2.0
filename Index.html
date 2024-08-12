@@ -8,11 +8,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <header>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
-
-
       <div class="d-flex align-items-center">
         <span><img class="logo" src="./images/Vtechnewlogo.png" alt="logo"
             style=" top: -30px; width: 90px; height: 110px;"></span>
@@ -24,35 +24,30 @@
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div style="margin-left: 550px;" class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+      <div style="margin-left: 350px;" class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav d-flex justify-content-around">
+          <li class="nav-item active mr-4">
             <a class="nav-link" href="/" data-toggle="tooltip" data-placement="bottom" title="Home">
               <i class="fas fa-home"></i> Home
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Products">
+          <li class="nav-item mr-4">
+            <a class="nav-link" href="./products.html" data-toggle="tooltip" data-placement="bottom" title="Products">
               <i class="fas fa-boxes"></i> Products
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./branches.html"  data-toggle="tooltip" data-placement="bottom" title="Branches">
+          <li class="nav-item mr-4">
+            <a class="nav-link" href="./branches.html" data-toggle="tooltip" data-placement="bottom" title="Branches">
               <i class="fas fa-map-marker-alt"></i> Branches
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Gallery">
-              <i class="fas fa-camera"></i> Gallery
-            </a>
-          </li>
-          <li class="nav-item">
+          <li class="nav-item mr-4">
             <a class="nav-link" href="./about.html" data-toggle="tooltip" data-placement="bottom" title="About">
               <i class="fas fa-info-circle"></i> About
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Contact">
+            <a class="nav-link" href="./contact.html" data-toggle="tooltip" data-placement="bottom" title="Contact">
               <i class="fas fa-envelope"></i> Contact
             </a>
           </li>
@@ -64,9 +59,34 @@
 
 <body>
   <!-- Carousel -->
+  <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
 
-
-
+    <div class="carousel-inner">
+      <div class="carousel-item active c-item">
+        <img src="./images/scroll images/web_2.jpg" class="d-block w-100 c-img" alt="Slide 1">
+      </div>
+      <div class="carousel-item c-item">
+        <img src="./images/scroll images/web_3.jpg" class="d-block w-100 c-img" alt="Slide 2">
+      </div>
+      <div class="carousel-item c-item">
+        <img src="./images/scroll images/web_1.jpg" class="d-block w-100 c-img" alt="Slide 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<!-- Home About Us -->
   <div class="home_about_us" class="background-color">
     <div class="container" .container-fluid>
       <p>India is the country where agriculture plays a vital role in the economy and areca nut has its own significance
@@ -113,18 +133,21 @@
             <div class="services_list_row row">
               <div class="col-sm-6">
                 <li class="service_content">
-                  <span><img class="ser" src="./images/services_img/emergency.png" alt="emergency"></span>Emergency Services
+                  <span><img class="ser" src="./images/services_img/emergency.png" alt="emergency"></span>Emergency
+                  Services
                 </li>
                 <li class="service_content">
                   <span><img class="ser" src="./images/services_img/qual.png" alt="quality"></span>Great Quality
                 </li>
                 <li class="service_content">
-                  <span><img class="ser" src="./images/services_img/help.png" alt="help"></span>In touch with farmers always
+                  <span><img class="ser" src="./images/services_img/help.png" alt="help"></span>In touch with farmers
+                  always
                 </li>
               </div>
               <div class="col-sm-6">
                 <li class="service_content">
-                  <span><img class="ser" src="./images/services_img/serv.png" alt="service"></span>Service centres at each
+                  <span><img class="ser" src="./images/services_img/serv.png" alt="service"></span>Service centres at
+                  each
                   taluk
                 </li>
                 <li class="service_content">
@@ -141,27 +164,62 @@
   </div>
   <br>
 
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-12">
-        <div class="banner2">
-          <div class="row no-gutters">
-            <div class="col-md-8">
-              <div class="banner-img"><img src="C:\Users\HP\Desktop\V-tech\services_img\update.jpg"></div>
+  <div class="container mt-5">
+    <div class="custom-container">
+      <div class="image-division col-md-8">
+        <img src="./images/services_img/update.jpg" alt="Gears" class="img-fluid">
+      </div>
+      <div class="text-division col-md-4">
+        <p>For any repair and/or upgrade of your old models of Areca Dehusking machines</p>
+        <!-- Modal Trigger Button -->
+        <button type="button" data-toggle="modal" data-target="#repairModal">
+          Click Here
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Structure -->
+  <div class="modal fade" id="repairModal" tabindex="-1" role="dialog" aria-labelledby="repairModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="repairModalLabel">Repair/Upgrade Request Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
             </div>
-            <div class="col-md-4">
-              <div>
-                <p>For any repair and/or upgrade of your old models of Areca Dehusking machines</p>
-                <button type="button" name="button" data-toggle="modal" data-target="#upgrade_model"
-                  class="btn btn-secondary upgrade_btn">Click Here!</button>
-              </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
             </div>
-          </div>
+            <div class="form-group">
+              <label for="machineModel">Machine Model</label>
+              <input type="text" class="form-control" id="machineModel" placeholder="Enter machine model">
+            </div>
+            <div class="form-group">
+              <label for="details">Details</label>
+              <textarea class="form-control" id="details" rows="3"
+                placeholder="Describe the issue or upgrade"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Testimonials -->
   <section class="home-testimonial">
     <div class="container-fluid">
       <div class="row d-flex justify-content-center testimonial-pos">
@@ -183,8 +241,7 @@
               <div class="tour-item ">
                 <div class="tour-desc bg-white">
                   <div class="tour-text color-grey-3 text-center">&ldquo;Great product! Improved our efficiency
-                    significantly.&rdquo;</div>
-                  <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="" alt=""></div>
+                    significantly.<br>Compared to machines from other manufactures. <br>V-tech machines are superior in performance and maintainance free.&rdquo;</div><br>
                   <div class="link-name d-flex justify-content-center">Naveen</div>
                   <div class="link-position d-flex justify-content-center">-Shivamogga</div>
                 </div>
@@ -193,9 +250,8 @@
             <div class="col-md-4 style-3">
               <div class="tour-item ">
                 <div class="tour-desc bg-white">
-                  <div class="tour-text color-grey-3 text-center">&ldquo;Great product! Improved our efficiency
-                    significantly.&rdquo;</div>
-                  <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="" alt=""></div>
+                  <div class="tour-text color-grey-3 text-center">&ldquo;Amazing Quality! <br>I use V-tech machines, very good quality and easily upgradable.
+                    significantly.&rdquo;</div><br>
                   <div class="link-name d-flex justify-content-center">Ramesh</div>
                   <div class="link-position d-flex justify-content-center">-Tirthalli</div>
                 </div>
@@ -204,9 +260,8 @@
             <div class="col-md-4 style-3">
               <div class="tour-item ">
                 <div class="tour-desc bg-white">
-                  <div class="tour-text color-grey-3 text-center">&ldquo;Great product! Improved our efficiency
-                    significantly.&rdquo;</div>
-                  <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="" alt=""></div>
+                  <div class="tour-text color-grey-3 text-center">&ldquo;Very good customer service! <br> I have been using machines from 2009, If there's any problem instant service is provided by the team.
+                    significantly.&rdquo;</div><br>
                   <div class="link-name d-flex justify-content-center">Mohan</div>
                   <div class="link-position d-flex justify-content-center">-Sagar</div>
                 </div>
@@ -291,7 +346,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="text-center">&copy; 2023 V-Tech Engineers. All rights reserved. Designed by: SHA INNOVATIONS</p>
+      <p class="text-center">&copy; 2023 V-Tech Engineers. All rights reserved. Designed by: Syed Muzammil</p>
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
